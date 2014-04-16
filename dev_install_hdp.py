@@ -24,7 +24,7 @@ START_AMBARI = "ambari-server start"
 
 
 #order them in sequence
-cmds = [NTPD, IPTABLES_OFF, IPTABLES_STOP, NTPD_START, CD, GET_AMBARI_REPO, SETUP_AMBARI, START_AMBARI]
+cmds = [NTPD, IPTABLES_OFF, IPTABLES_STOP, NTPD_START, CD, GET_AMBARI_REPO, INSTALL_AMBARI, SETUP_AMBARI, START_AMBARI]
 
 #Iterates over list, running statements for each item in the list
 #Note, that whitespace is absolutely critical and that a consistent indent must be maintained for the code to work properly
