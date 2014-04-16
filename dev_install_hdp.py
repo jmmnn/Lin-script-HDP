@@ -13,12 +13,12 @@ print "Key", Key
 
 #List commands to execute here.
 NTPD = "sudo chkconfig ntpd on"
-IPTABLES-OFF = "sudo chkconfig iptables off"
-IPTABLES-STOP = "sudo /etc/init.d/iptables stop"
-NTPD-START = "sudo service ntpd start"
+IPTABLES_OFF = "sudo chkconfig iptables off"
+IPTABLES_STOP = "sudo /etc/init.d/iptables stop"
+NTPD_START = "sudo service ntpd start"
 
 #order them in sequence
-cmds = [NTPD, IPTABLES-OFF, IPTABLES-STOP, NTPD-START]
+cmds = [NTPD, IPTABLES_OFF, IPTABLES_STOP, NTPD_START]
 
 #Iterates over list, running statements for each item in the list
 #Note, that whitespace is absolutely critical and that a consistent indent must be maintained for the code to work properly
