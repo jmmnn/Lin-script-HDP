@@ -18,8 +18,8 @@ NTPD_START = "sudo service ntpd start"
 CD = "cd /etc/yum.repos.d/"
 GET_AMBARI_REPO = "wget http://public-repo-1.hortonworks.com/ambari/centos6/1.x/updates/1.5.0/ambari.repo"
 INSTALL_AMBARI = "yum install ambari-server"
-SETUP_AMBARI = ambari-server setup
-START_AMBARI = ambari-server start
+SETUP_AMBARI = "ambari-server setup"
+START_AMBARI = "ambari-server start"
 
 
 
