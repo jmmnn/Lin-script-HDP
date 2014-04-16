@@ -5,11 +5,6 @@ import subprocess
 import sys
 
 # Variables
-Key = "us-east.pem"
-User = str(sys.argv[1])
-PublicDNS = str(sys.argv[2])
-print "Public DNS", PublicDNS
-print "Key", Key
 
 #List commands to execute here.
 NTPD = "sudo chkconfig ntpd on"
