@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-__author__ = 'Jorge'
+__author__ = 'jmmnn'
 
 import subprocess
 import sys
@@ -23,12 +23,10 @@ SETUP_AMBARI = "sudo ambari-server setup"
 START_AMBARI = "sudo ambari-server start"
 
 
-
-#order them in sequence
+#order commands in sequence
 cmds = [NTPD, IPTABLES_OFF, IPTABLES_STOP, NTPD_START, GET_AMBARI_REPO, CP, UPDATE_REPOS, INSTALL_AMBARI, SETUP_AMBARI, START_AMBARI]
 
 #Iterates over list, running statements for each item in the list
-#Note, that whitespace is absolutely critical and that a consistent indent must be maintained for the code to work properly
 count=0
 for cmd in cmds:
     count+=1
