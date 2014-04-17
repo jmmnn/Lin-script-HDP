@@ -19,8 +19,8 @@ CP = "sudo cp ambari.repo /etc/yum.repos.d/"
 GET_AMBARI_REPO = "wget http://public-repo-1.hortonworks.com/ambari/centos6/1.x/updates/1.5.0/ambari.repo"
 UPDATE_REPOS = "yum repolist"
 INSTALL_AMBARI = "sudo yum install ambari-server"
-SETUP_AMBARI = "ambari-server setup"
-START_AMBARI = "ambari-server start"
+SETUP_AMBARI = "sudo ambari-server setup"
+START_AMBARI = "sudo ambari-server start"
 
 
 
